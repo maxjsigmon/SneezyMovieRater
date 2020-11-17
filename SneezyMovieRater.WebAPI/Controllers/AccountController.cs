@@ -13,7 +13,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using SneezyMovieRater.Data;
+using SneeziMovieRater.Data;
 using SneezyMovieRater.WebAPI.Models;
 using SneezyMovieRater.WebAPI.Providers;
 using SneezyMovieRater.WebAPI.Results;
