@@ -34,6 +34,8 @@ namespace SneezyMovieRater.Data
             return new ApplicationDbContext();
         }
 
+
+        public DbSet<Show> Shows { get; set; }
         public DbSet<Movie> Movie { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -47,8 +49,6 @@ namespace SneezyMovieRater.Data
                 .Add(new IdentityUserRoleConfiguration());
         }
     }
-
-
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
     {
         public IdentityUserLoginConfiguration()
