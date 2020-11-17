@@ -7,18 +7,19 @@ using System.Threading.Tasks;
 
 namespace MovieRater.Data
 {
-    public class Content
+    public class Rating
     {
         [Key]
-        public int ContentId { get; set; } 
+        public int RatingId { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public Guid AuthorId { get; set; }
 
         [Required]
-        public string Description { get; set; }
-      
+        public double Rate { get; set; }
+
         [Required]
-        public string MaturityRating { get; set; }
+        public string ReviewDescription { get; set; }
+
     }
 }

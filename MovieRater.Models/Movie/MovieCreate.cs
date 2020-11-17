@@ -5,20 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieRater.Data
+namespace MovieRater.Models.Movie
 {
-    public class Content
+    public class MovieCreate
     {
-        [Key]
-        public int ContentId { get; set; } 
-
         [Required]
+        [MaxLength(100)]
         public string Title { get; set; }
-
         [Required]
         public string Description { get; set; }
-      
         [Required]
         public string MaturityRating { get; set; }
+
+        [Required]
+        public double RunTime { get; set; }
     }
 }
