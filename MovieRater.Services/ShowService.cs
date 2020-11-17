@@ -1,6 +1,6 @@
 ﻿using MovieRater.Data;
 using MovieRater.Models.Show;
-using SneezyMovieRater.Data;
+using SneeziMovieRater.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;

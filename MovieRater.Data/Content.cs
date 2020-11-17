@@ -10,7 +10,7 @@ namespace MovieRater.Data
     public class Content
     {
         [Key]
-        public int ContentId { get; set; 
+        public int ContentId { get; set; } 
 
         [Required]
         public string Title { get; set; }
