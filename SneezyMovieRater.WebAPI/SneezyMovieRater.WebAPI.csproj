@@ -306,6 +306,20 @@
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MovieRater.Data\MovieRater.Data.csproj">
+      <Project>{da279b8f-bbd5-405a-9057-50fe8a986572}</Project>
+      <Name>MovieRater.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieRater.Models\MovieRater.Models.csproj">
+      <Project>{f932a6f7-0bb3-4a86-96cd-3054c821b70f}</Project>
+      <Name>MovieRater.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MovieRater.Services\MovieRater.Services.csproj">
+      <Project>{b6411b52-fc19-4581-85f5-5b3b839c8b20}</Project>
+      <Name>MovieRater.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

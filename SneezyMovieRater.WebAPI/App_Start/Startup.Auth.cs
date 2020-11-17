@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OAuth;
 using Owin;
 using SneezyMovieRater.WebAPI.Providers;
 using SneezyMovieRater.WebAPI.Models;
+using SneezyMovieRater.Data;
 
 namespace SneezyMovieRater.WebAPI
 {
