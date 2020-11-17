@@ -8,7 +8,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using MovieRater.Data;
 
-namespace SneezyMovieRater.Data
+namespace SneeziMovieRater.Data
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -28,13 +28,13 @@ namespace SneezyMovieRater.Data
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-        
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
 
-
+        public DbSet<Rating> Ratings { get; set; }
         public DbSet<Show> Shows { get; set; }
         public DbSet<Movie> Movie { get; set; }
 
@@ -49,6 +49,7 @@ namespace SneezyMovieRater.Data
                 .Add(new IdentityUserRoleConfiguration());
         }
     }
+
     public class IdentityUserLoginConfiguration : EntityTypeConfiguration<IdentityUserLogin>
     {
         public IdentityUserLoginConfiguration()
