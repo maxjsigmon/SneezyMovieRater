@@ -35,13 +35,14 @@ namespace SneeziMovieRater.Data
         }
 
         public DbSet<Rating> Ratings { get; set; }
+        public DbSet<Show> Shows { get; set; }
+        public DbSet<Movie> Movie { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
                 .Conventions
                 .Remove<PluralizingTableNameConvention>();
-
             modelBuilder
                 .Configurations
                 .Add(new IdentityUserLoginConfiguration())
@@ -65,3 +66,4 @@ namespace SneeziMovieRater.Data
         }
     }
 }
+
